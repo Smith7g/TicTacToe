@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+
 html {
     background-color: black;
     color: red;
@@ -10,5 +8,27 @@ body {
     flex-direction: column;
     align-items: center;
   }
+tr{
 
-
+    height: 100px;
+}
+td{
+    width: 100px;
+}
+.t1,.t2,.t3,.t4,.t5,.t6{
+    border-bottom: solid;
+}
+.t2,.t5,.t8{
+    border-left: solid;
+    border-right: solid;
+}
+.i2{
+    background-color: black;
+    color: red;
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: 70px;
+    position: relative;
+    left: 10px;
+}
