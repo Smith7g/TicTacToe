@@ -8,8 +8,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
-tr{
-
+.gameBoard{
+    margin: 30px;
+}
+  tr{
     height: 100px;
 }
 td{
@@ -22,13 +24,12 @@ td{
     border-left: solid;
     border-right: solid;
 }
-.i2{
-    background-color: black;
-    color: red;
-    height: 80px;
-    width: 80px;
-    text-align: center;
-    font-size: 70px;
-    position: relative;
-    left: 10px;
+
+.bt1,.bt2,.bt3,.bt4{
+    border-bottom: solid;
+}
+
+.bt2,.bt3,.bt8,.bt9{
+    border-left: solid;
+    border-right: solid;
 }
