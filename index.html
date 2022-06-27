@@ -9,30 +9,53 @@
 </head>
 <body>
     <h1>TicTacToe Extreme</h1>
-    <div>
-        <a href="/index.html"><button>Easy Board</button></a>
-        <a href="/board2.html"><button>Medium Board</button></a>
-        <a href="/board3.html"><button>Hard Board</button></a>
-    </div>
+        <div id = 'popup1'>
+            <h1> Hello</h1>
+            <p>
+                Would you like this to be a two player game,<br> or would you like to play against the computer?
+            </p>
+            <input type = "button" onclick="hideMe()" value="Player v Player">
+            <input type = "button" onclick="hideMe2()" value="Player v Bot">
+        </div>
+        <div class = 'pvp'>
+            <form id = form>
+            <h1>Player vs Player</h1>
+            <p>Player 1 what's your name?</p>
+            <input type = 'text' id = 'name1' class = names >
+            <p>Player 2 what's your name?</p>
+            <input type = 'text' id = 'name2' class = names>
+            <input type = "button" id = 'btn' onclick="showName()" value="submit">
+            </form>
+        <span id = 'showName1'> </span>
+        </div>
+        <div id = 'pvb'>
+            <form id = 'form2'>
+             <p>Player 1 what's your name?</p>
+             <input type = 'text' id = 'name3' class = names >
+             <input type = "button" id = 'btn' onclick="showName2()" value="submit">
+            </form>
+            <span id = 'showName3'> </span>
+        </div>
     <table class = 'gameBoard'>
-
         <tr>
          <td class = 't1'></td>
          <td class = 't2'></td>
          <td class = 't3'></td>
         </tr>
         <tr>
-         <td class = 't4' ></td>
-         <td class = 't5' ></td>
-         <td class = 't6' ></td>
+         <td class = 't1' ></td>
+         <td class = 't2' ></td>
+         <td class = 't3' ></td>
      </tr>
      <tr>
-         <td class = 't7'></td>
-         <td class = 't8'></td>
-         <td class = 't9'></td>
+         <td class = 't4'></td>
+         <td class = 't5'></td>
+         <td class = 't6'></td>
      </tr>
     </table>
-   <button type="submit">Reset</button>
+    <form>
+        <button>Reset</button>
+    </form>
 </body>
 <script type="text/javascript" src="/app.js"></script>
 </html>
